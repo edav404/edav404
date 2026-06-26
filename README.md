@@ -19,15 +19,6 @@
 <br>
 
 <div align="center">
-  <!-- Vibe Check: Last.fm -->
-  <a href="https://www.last.fm/user/edav404">
-    <img src="https://lastfm-profile-readme.vercel.app/api/edav404?color=0f0c29&textColor=ffffff&isRounded=true&displayName=true" alt="Now Playing">
-  </a>
-</div>
-
-<br>
-
-<div align="center">
   <img src="https://raw.githubusercontent.com/edav404/edav404/main/assets/stack.svg" width="100%" alt="Tech Stack">
 </div>
 
@@ -66,6 +57,15 @@
 <div align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=edav404&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Langs" />
   <img height="170" src="https://streak-stats.demolab.com?user=edav404&theme=tokyonight&hide_border=true" alt="Streak" />
+</div>
+
+<br>
+
+<div align="center">
+  <!-- Vibe Check: Last.fm -->
+  <a href="https://www.last.fm/user/edav404">
+    <img src="https://lastfm-profile-readme.vercel.app/api/edav404?color=0f0c29&textColor=ffffff&isRounded=true&displayName=true" alt="Now Playing">
+  </a>
 </div>
 
 <br>
