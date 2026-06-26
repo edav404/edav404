@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="100%">
+  <defs>
+    <radialGradient id="crtGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#153015" />
+      <stop offset="100%" stop-color="#0D1F0D" />
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="rgba(0,0,0,0.3)" stroke-width="2" />
+    </pattern>
+  </defs>
+
+  <style>
+    .font-crt { font-family: 'Courier New', Courier, monospace; font-size: 16px; fill: #39FF14; font-weight: bold; }
+    .title-crt { font-size: 20px; }
+    .cursor { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-color-scheme: dark) {
+      /* Already dark */
+    }
+  </style>
+
+  <!-- CRT Background -->
+  <rect x="0" y="0" width="800" height="350" fill="url(#crtGrad)"/>
+  
+  <!-- CRT Content -->
+  <g filter="url(#glow)">
+    <text x="40" y="50" class="font-crt title-crt">C:\&gt; type about.txt</text>
+    <text x="40" y="90" class="font-crt">🎓 Systems Engineering student @ Tecnológico de Antioquia</text>
+    <text x="40" y="120" class="font-crt">💻 Full-Stack Developer — building things that actually work</text>
+    <text x="40" y="150" class="font-crt">🔐 OSINT &amp; Cybersecurity enthusiast (OWASP, pentesting)</text>
+    <text x="40" y="180" class="font-crt">🎵 Music nerd: melodic techno / nu-metal / A7X deathbat</text>
+    <text x="40" y="210" class="font-crt">🌱 Currently deep into: TypeScript, Supabase, AI-powered apps</text>
+    <text x="40" y="240" class="font-crt">⚡ Spec-driven, creative, always chasing the minimal elegant solution</text>
+    <text x="40" y="290" class="font-crt title-crt">C:\&gt; <tspan class="cursor">_</tspan></text>
+  </g>
+
+  <!-- Scanlines Overlay -->
+  <rect x="0" y="0" width="800" height="350" fill="url(#scanlines)" pointer-events="none"/>
+  
+  <!-- CRT Bevel/Vignette -->
+  <rect x="0" y="0" width="800" height="350" fill="none" stroke="rgba(0,0,0,0.8)" stroke-width="15" pointer-events="none"/>
+  
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 50" width="100%" height="100%">
+  <defs>
+    <linearGradient id="taskbarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#245EDC" />
+      <stop offset="50%" stop-color="#1446AB" />
+      <stop offset="100%" stop-color="#245EDC" />
+    </linearGradient>
+    <linearGradient id="startGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#55C955" />
+      <stop offset="100%" stop-color="#3C8A3C" />
+    </linearGradient>
+    <linearGradient id="trayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#199CE6" />
+      <stop offset="100%" stop-color="#0E5EA2" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-xp { font-family: 'Trebuchet MS', 'Segoe UI', Tahoma, sans-serif; font-size: 20px; fill: white; font-style: italic; font-weight: bold; }
+    .font-time { font-family: Tahoma, sans-serif; font-size: 14px; fill: white; font-weight: normal; }
+    @media (prefers-color-scheme: dark) {
+      /* Keep same style */
+    }
+  </style>
+
+  <!-- Taskbar Background -->
+  <rect x="0" y="0" width="800" height="50" fill="url(#taskbarGrad)"/>
+  <line x1="0" y1="0" x2="800" y2="0" stroke="#4886F6" stroke-width="2"/>
+  
+  <!-- System Tray -->
+  <path d="M700,0 L800,0 L800,50 L680,50 Z" fill="url(#trayGrad)"/>
+  <line x1="680" y1="50" x2="700" y2="0" stroke="#0C4F8D" stroke-width="2"/>
+  <text x="735" y="30" class="font-time">4:20 PM</text>
+
+  <!-- Start Button -->
+  <rect x="0" y="0" width="120" height="50" rx="0" ry="0" fill="url(#startGrad)"/>
+  <!-- Bevel on Start -->
+  <path d="M105,0 Q120,25 105,50 L120,50 L120,0 Z" fill="#296629"/>
+  <text x="35" y="32" class="font-xp">start</text>
+  
+  <!-- "Windows" logo simple representation (4 boxes) -->
+  <rect x="10" y="15" width="8" height="8" fill="#F8672F" rx="1" ry="1" transform="skewY(-10)"/>
+  <rect x="20" y="15" width="8" height="8" fill="#7CBC24" rx="1" ry="1" transform="skewY(-10)"/>
+  <rect x="10" y="25" width="8" height="8" fill="#00A2ED" rx="1" ry="1" transform="skewY(10)"/>
+  <rect x="20" y="25" width="8" height="8" fill="#FFC100" rx="1" ry="1" transform="skewY(10)"/>
+
+</svg>

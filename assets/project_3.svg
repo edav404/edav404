@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5F3FF" />
+      <stop offset="100%" stop-color="#CDE0F5" />
+    </linearGradient>
+    <filter id="shadow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+      <feOffset dx="2" dy="2"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .font-xp { font-family: 'Trebuchet MS', 'Segoe UI', Tahoma, sans-serif; }
+    .title { font-size: 18px; fill: #0A246A; font-weight: bold; }
+    .desc { font-size: 13px; fill: #333; }
+    .link { font-size: 12px; fill: #0000FF; text-decoration: underline; }
+    .bg-rect { fill: url(#bg); }
+    .win-bevel { fill: none; stroke-width: 2; }
+    .bevel-top-left { stroke: white; }
+    .bevel-bottom-right { stroke: #888; }
+    @media (prefers-color-scheme: dark) {
+      .bg-rect { fill: #1a1a2e; }
+      .title { fill: #E5F3FF; }
+      .desc { fill: #ccc; }
+      .bevel-bottom-right { stroke: #111; }
+      .link { fill: #66b3ff; }
+    }
+  </style>
+
+  <!-- Win98 Bevel Background -->
+  <rect x="0" y="0" width="400" height="200" class="bg-rect" />
+  <polyline points="0,200 0,0 400,0" class="win-bevel bevel-top-left" />
+  <polyline points="400,0 400,200 0,200" class="win-bevel bevel-bottom-right" />
+  
+  <rect x="10" y="10" width="380" height="30" fill="#0A246A" />
+  <text x="20" y="30" class="font-xp" font-size="14" fill="white" font-weight="bold">musicmatch.exe</text>
+  
+  <text x="20" y="70" class="font-xp title">MusicMatch App</text>
+  
+  <text x="20" y="100" class="font-xp desc">"Tinder for music" — swipe songs, match</text>
+  <text x="20" y="120" class="font-xp desc">with people who share your taste &amp;</text>
+  <text x="20" y="140" class="font-xp desc">discover upcoming events.</text>
+
+  <rect x="20" y="160" width="80" height="25" fill="#3C8A3C" rx="4" ry="4" filter="url(#shadow)"/>
+  <text x="60" y="177" class="font-xp" font-size="12" fill="white" font-weight="bold" text-anchor="middle">Execute</text>
+  
+  <text x="120" y="177" class="font-xp" font-size="12" fill="#666">Stack: JavaScript</text>
+</svg>
